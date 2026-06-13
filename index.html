@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Portfolio of Risana Thaseer R — UI/UX Designer & Web Developer based in Kerala."> 
+  <title>Risana Thaseer R — Designer & Developer</title> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+
+  <nav class="nav" aria-label="Main navigation"> 
+    <div class="container nav-inner"> 
+      <a href="#home" class="nav-brand">Risana<span class="dot">.</span></a> 
+      <ul class="nav-links"> 
+        <li><a href="#projects">Projects</a></li> 
+        <li><a href="#blog">Blog</a></li> 
+        <li><a href="#skills">Toolkit</a></li> 
+        <li><a href="#contact">Contact</a></li> 
+        <li> 
+          <button class="theme-btn" id="theme-toggle" aria-label="Toggle dark mode">&#127769;</button> 
+        </li> 
+      </ul> 
+    </div> 
+  </nav> 
+
+  <header class="hero" id="home"> 
+    <div class="container"> 
+      <p class="hero-tag">Hello world, I'm</p> 
+      <h1 class="hero-name">Risana Thaseer R</h1> 
+      <p class="hero-role">UI/UX Designer &amp; Web Developer &#8212; <span class="highlight">Kerala</span></p> 
+      <p class="hero-bio">I craft intentional, user-centric interfaces and translate designs into high-performance, responsive code. Currently building automated web systems and learning in public with ZERO2DEV.</p> 
+      <div class="hero-ctas"> 
+        <a href="#projects" class="btn btn-primary">Explore My Work</a> 
+        <a href="#contact" class="btn btn-secondary">Let's Connect</a> 
+      </div> 
+    </div> 
+  </header> 
+
+  <main> 
+    <section class="section" id="projects"> 
+      <div class="container"> 
+        <p class="section-label">01 // Selected Work</p> 
+        <h2 class="section-title">Featured Projects</h2> 
+
+        <div class="filter-controls"> 
+          <div class="filter-buttons"> 
+            <button class="filter-btn active" data-filter="all">All</button> 
+            <button class="filter-btn" data-filter="design">Design</button> 
+            <button class="filter-btn" data-filter="web">Web</button> 
+            <button class="filter-btn" data-filter="code">Code</button> 
+          </div> 
+          <span class="project-count" id="project-counter">Loading projects...</span> 
+        </div> 
+
+        <div class="projects-grid" id="projects-container"> 
+
+          <article class="card" data-category="design"> 
+            <span class="card-tag">UI / UX Design</span> 
+            <h3 class="card-title">ORBIT AI</h3> 
+            <p class="card-desc">An intelligent interface designed to orchestrate complex design workflows. Built with a comprehensive component system and fully functional prototype logic.</p> 
+            
+            <div class="embed-container"> 
+              <iframe 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FRkNppbmJp6e2ZuoqPNBl25%2FUntitled%3Fnode-id%3D0-1%26t%3DXpOXH8LTLCEngZKn-1" 
+                allowfullscreen> 
+              </iframe> 
+            </div> 
+
+            <div class="card-meta"> 
+              <span class="chip">Figma</span> 
+              <span class="chip">Design Tokens</span> 
+              <span class="chip">Interactive Prototype</span> 
+            </div> 
+            <a href="https://www.figma.com/design/RkNppbmJp6e2ZuoqPNBl25/Untitled?node-id=0-1&t=XpOXH8LTLCEngZKn-1" target="_blank" rel="noopener" class="card-link">Open Canvas View &#8599;</a> 
+          </article> 
+
+          <article class="card" data-category="web"> 
+            <span class="card-tag">Web Engineering</span> 
+            <h3 class="card-title">Folio Engine</h3> 
+            <p class="card-desc">A premium portfolio layout hand-coded from user foundation designs. Features strict semantic accessibility structure, fluid layout grid metrics, and light/dark theme synchronization.</p> 
+            <div class="card-meta"> 
+              <span class="chip">HTML5</span> 
+              <span class="chip">CSS Grid</span> 
+              <span class="chip">Vanilla JavaScript</span> 
+            </div> 
+            <a href="https://github.com" target="_blank" rel="noopener" class="card-link">View Source Code &#8599;</a> 
+          </article> 
+
+          <article class="card" data-category="code"> 
+            <span class="card-tag">Automation &amp; Logic</span> 
+            <h3 class="card-title">Pulse Sync</h3> 
+            <p class="card-desc">An efficient serverless utility script structured to gather and summarize development metrics down into daily morning dispatches via secure automated pipelines.</p> 
+            <div class="card-meta"> 
+              <span class="chip">Python</span> 
+              <span class="chip">GitHub Actions</span> 
+            </div> 
+            <a href="#" class="card-link">In Progress Pipeline &#8594;</a> 
+          </article> 
+
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="section section-alt" id="blog"> 
+      <div class="container"> 
+        <p class="section-label">02 // Technical Journal</p> 
+        <h2 class="section-title">Latest Articles</h2> 
+
+        <div class="blog-grid"> 
+          
+          <article class="blog-card"> 
+            <span class="blog-date">June 10, 2026</span> 
+            <h3 class="blog-title">Orchestrating UI Systems inside ORBIT AI</h3> 
+            <p class="blog-excerpt">Exploring how maintaining shared layout tokens within unified design frames shortens handoff loops and stabilizes software execution patterns.</p> 
+            <a href="#" class="blog-link">Read More &rarr;</a> 
+          </article> 
+
+          <article class="blog-card"> 
+            <span class="blog-date">May 29, 2026</span> 
+            <h3 class="blog-title">Building Components on Pure Layout Foundations</h3> 
+            <p class="blog-excerpt">Why engineering core layouts with vanilla specifications yields exceptional render performance and guarantees long-term architecture survival.</p> 
+            <a href="#" class="blog-link">Read More &rarr;</a> 
+          </article> 
+
+          <article class="blog-card"> 
+            <span class="blog-date">May 15, 2026</span> 
+            <h3 class="blog-title">Handling Fluid Media Frames Safely</h3> 
+            <p class="blog-excerpt">A deep-dive dive analysis into calculating dynamic bounding aspects across multi-screen setups to keep external data modules perfectly scaled.</p> 
+            <a href="#" class="blog-link">Read More &rarr;</a> 
+          </article> 
+
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="section" id="skills"> 
+      <div class="container"> 
+        <p class="section-label">03 // Capabilities</p> 
+        <h2 class="section-title">Technical Expertise</h2> 
+
+        <div class="skills-grid"> 
+          <div class="skill"> 
+            <div class="skill-head"> 
+              <span class="skill-name">Product Design &amp; Architecture (Figma)</span> 
+              <span class="skill-pct">90%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="width: 90%;"></div> 
+            </div> 
+          </div> 
+
+          <div class="skill"> 
+            <div class="skill-head"> 
+              <span class="skill-name">Interface Engineering (HTML &amp; CSS Layouts)</span> 
+              <span class="skill-pct">85%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="width: 85%;"></div> 
+            </div> 
+          </div> 
+
+          <div class="skill"> 
+            <div class="skill-head"> 
+              <span class="skill-name">Interactive Automation (JavaScript)</span> 
+              <span class="skill-pct">70%</span> 
+            </div> 
+            <div class="skill-track"> 
+              <div class="skill-fill" style="width: 70%;"></div> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
+
+    <section class="section section-alt" id="contact"> 
+      <div class="container"> 
+        <p class="section-label">04 // Say Hello</p> 
+        <h2 class="section-title">Let's Work Together</h2> 
+        <p class="contact-lead">I am available for design contracts, engineering internships, and collaborative builds. Drop me an email to start talking.</p> 
+
+        <div class="contact-links"> 
+          <a href="mailto:risanathaseerr@gmail.com" class="contact-link"> 
+            <span class="contact-link-label">Direct Inbox</span> 
+            <span class="contact-link-value">risanathaseerr@gmail.com</span> 
+          </a> 
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link"> 
+            <span class="contact-link-label">Professional Network</span> 
+            <span class="contact-link-value">LinkedIn Profile &#8599;</span> 
+          </a> 
+        </div> 
+      </div> 
+    </section> 
+  </main> 
+
+  <footer class="footer"> 
+    <div class="container"> 
+      <p>Handcrafted using custom markup assets — Risana Thaseer R © 2026.</p> 
+    </div> 
+  </footer> 
+
+  <button class="to-top" id="to-top" aria-label="Back to top">&#8593;</button> 
+
+  <script src="script.js"></script> 
+</body> 
+</html>
