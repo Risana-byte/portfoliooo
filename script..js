@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   processProjectFilter('all'); 
 });
 document.addEventListener("DOMContentLoaded", function() {
-  const grid = document.getElementById("projects-grid");
+  const grid = document.getElementById("projects-container");
 
   // Grab the JSON file created by the Python script
   fetch("projects.json")
